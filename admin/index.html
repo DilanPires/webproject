@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/index.css">
     <title>Formulario Registro</title>
 </head>
 <body>
@@ -12,38 +14,59 @@
                      <legend><b>Formulario Do Cliente</b></legend>
                         <br>
                         <div class="input">
+                            <i class='bxr  bxs-user icon'></i> 
                             <input type="text" name="nome" id="nome" class="input_user" required>
-                            <label for="nome">Nome Completo</label>
+                            <label for="nome" class="label">Nome Completo</label>
                         </div> 
+                        <br><br>
                         <div class="input">
-                            <input type="text" name="Email" id="email" class="input_user" required>
-                            <label for="email">E-mail</label>
+                            <i class='bxr  bx-envelope icon'></i> 
+                            <input type="text" name="email" id="email" class="input_user" required>
+                            <label for="email" class="label">E-mail</label>
                         </div>
+                        <br><br>
                         <div class="input">
+                            <i class='bxr  bx-phone icon'></i>
                             <input type="text" name="telefone" id="telefone" class="input_user" required>
-                            <label for="telefone">Telefone</label>
+                            <label for="telefone" class="label">Telefone</label>
                         </div>
-                        <p>Sexo</p>
-                        <input type="radio" id="feminino" name="sexo" value="Feminino" required>
-                        <label for="feminino">Feminino</label>
-                        <input type="radio" id="masculino" name="sexo" value="Masculino" required>
-                        <label for="masculino">Masculino</label>
+                        <br><br>
+                         <div class="sexo_container">
+                            <p>Sexo</p>
+                            <div class="sexo_option">
+                                <input type="radio" id="feminino" name="sexo" value="Feminino" required>
+                                <label for="feminino" class="label"><i class='bx bxs-female'></i> Feminino</label>
+                            </div>
+                            <div class="sexo_option">
+                                <input type="radio" id="masculino" name="sexo" value="Masculino" required>
+                                <label for="masculino" class="label"><i class='bx bxs-male'></i> Masculino</label>
+                            </div>
+                        </div>
+                        <br><br>
                         <div class="input">
-                            <label for="data_nascimento"><b>Data de Nascimento</b></label>
+                            <label for="data_nascimento" class="label"><b>Data de Nascimento</b></label>
                             <input type="date" id="data_nascimento" name="Data_Nascimento" value="Feminino" class="input_user" required>
                         </div>
+                        <br><br>
                         <div class="input">
+                            <i class='bxr  bxs-flag-alt-3 icon'></i> 
                             <input type="text" name="provincia" id="provincia" class="input_user" required>
-                            <label for="provincia">Provincia</label>
+                            <label for="provincia" class="label">Provincia</label>
                         </div> 
+                        <br><br>
                         <div class="input">
+                            <i class='bxr  bxs-city icon'></i> 
                             <input type="text" name="cidade" id="cidade" class="input_user" required>
-                            <label for="cidade">Cidade</label>
+                            <label for="cidade" class="label">Cidade</label>
                         </div> 
+                        <br><br>
                         <div class="input">
+                            <i class='bxr  bxs-home-alt icon'></i>  
                             <input type="text" name="morada" id="morada" class="input_user" required>
-                            <label for="morada">Morada</label>
+                            <label for="morada" class="label">Morada</label>
                         </div>
+                        <br><br>
+                        <input type="submit" name="submit" id="submit">
               </fieldset>
          </form>
      </div>
