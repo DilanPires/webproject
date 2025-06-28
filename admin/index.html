@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Registro</title>
+</head>
+<body>
+     <div class="principal">
+         <form action="#">
+              <fieldset>
+                     <legend><b>Formulario Do Cliente</b></legend>
+                        <br>
+                        <div class="input">
+                            <input type="text" name="nome" id="nome" class="input_user" required>
+                            <label for="nome">Nome Completo</label>
+                        </div> 
+                        <div class="input">
+                            <input type="text" name="Email" id="email" class="input_user" required>
+                            <label for="email">E-mail</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="telefone" id="telefone" class="input_user" required>
+                            <label for="telefone">Telefone</label>
+                        </div>
+                        <p>Sexo</p>
+                        <input type="radio" id="feminino" name="sexo" value="Feminino" required>
+                        <label for="feminino">Feminino</label>
+                        <input type="radio" id="masculino" name="sexo" value="Masculino" required>
+                        <label for="masculino">Masculino</label>
+                        <div class="input">
+                            <label for="data_nascimento"><b>Data de Nascimento</b></label>
+                            <input type="date" id="data_nascimento" name="Data_Nascimento" value="Feminino" class="input_user" required>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="provincia" id="provincia" class="input_user" required>
+                            <label for="provincia">Provincia</label>
+                        </div> 
+                        <div class="input">
+                            <input type="text" name="cidade" id="cidade" class="input_user" required>
+                            <label for="cidade">Cidade</label>
+                        </div> 
+                        <div class="input">
+                            <input type="text" name="morada" id="morada" class="input_user" required>
+                            <label for="morada">Morada</label>
+                        </div>
+              </fieldset>
+         </form>
+     </div>
+</body>
+</html>
