@@ -1,3 +1,4 @@
+<!--Bloco responsavel por mandar os resgistros a base de dados-->
 <?php
  if(isset($_POST['submit']))
  {
@@ -16,6 +17,8 @@
     values ('$nome', '$email', '$telefone', '$sexo', '$data_nascimento', '$provincia', '$cidade', '$morada')");
  }
 ?>
+<!--Fim do bloco de registro dos dados na base de dados-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

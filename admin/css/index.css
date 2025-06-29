@@ -24,7 +24,7 @@
 
 /*body*/
 body{
-    background-color: var(--secondary-color);
+    background-color: var(--background-color);
 }
 /*fim do body*/
 
@@ -44,15 +44,16 @@ body{
 
 /*fieldset*/
 fieldset{
-    border: 3px solid var(--secondary-color);
+    border: 3px solid var(--primary-color);
     border-radius: 10px;
 }
 legend{
-    border: 2px solid var(--secondary-color);
+    border: 2px solid var(--primary-color);
     border-radius: 10px;
     padding: 10px;
     text-align: center;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: white;
 }
 /*fim do fieldset*/
 
@@ -72,7 +73,7 @@ legend{
    font-size: 16px;
    width: 50%;
    height: 35px;
-   border: 1px solid var(--secondary-color);
+   border: 1px solid var(--primary-color);
    border-radius: 5px;
    outline: none;
    transition: var(--transition-3s);
@@ -155,4 +156,114 @@ legend{
 /*fim do botao submit*/
 
 /*Responsividade*/
+/* ========== RESPONSIVIDADE ========== */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .principal {
+        width: 70%;
+        top: 50%;
+    }
+    
+    .input_user {
+        width: 70%;
+    }
+    
+    #submit {
+        margin-left: 300px;
+    }
+}
+
+/* Celulares grandes (576px - 767px) */
+@media (max-width: 767px) {
+    .principal {
+        width: 85%;
+        top: 50%;
+        padding: 10px;
+    }
+    
+    .input {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 10px;
+    }
+    
+    .input_user {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+    
+    .sexo_container {
+        margin-left: 20px;
+    }
+    
+    #submit {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 80%;
+    }
+}
+
+/* Celulares pequenos (até 575px) */
+@media (max-width: 575px) {
+    .principal {
+        width: 95%;
+        top: 50%;
+    }
+    
+    legend {
+        font-size: 14px;
+        padding: 5px;
+    }
+    
+    .input_user {
+        width: 95%;
+        padding: 0 25px;
+        font-size: 14px;
+    }
+    
+    .label {
+        font-size: 12px;
+        left: 5px;
+    }
+    
+    .icon {
+        font-size: 13px;
+    }
+    
+    .sexo_container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    
+    .sexo_option {
+        margin-bottom: 5px;
+    }
+    
+    #submit {
+        width: 90%;
+    }
+}
+
+/* Ajustes para telas muito pequenas (até 320px) */
+@media (max-width: 320px) {
+    .principal {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    fieldset {
+        border: 2px solid var(--secondary-color);
+    }
+    
+    .input_user {
+        height: 30px;
+    }
+    
+    .label {
+        font-size: 11px;
+    }
+}
 /*Fim da responsividade*/
