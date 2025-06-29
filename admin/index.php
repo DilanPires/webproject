@@ -1,3 +1,21 @@
+<?php
+ if(isset($_POST['submit']))
+ {
+    include_once('config.php');
+
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $telefone = $_POST['telefone'];
+    $sexo = $_POST['sexo'];
+    $data_nascimento = $_POST['data_nascimento'];
+    $provincia = $_POST['provincia'];
+    $cidade = $_POST['cidade'];
+    $morada = $_POST['morada'];
+
+    $result = mysqli_query($conexao, "insert into cliente(nome, email, telefone, sexo, data_nascimento, provincia, cidade, morada)
+    values ('$nome', '$email', '$telefone', '$sexo', '$data_nascimento', '$provincia', '$cidade', '$morada')");
+ }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -9,7 +27,7 @@
 </head>
 <body>
      <div class="principal">
-         <form action="#">
+         <form action="index.php" method="POST">
               <fieldset>
                      <legend><b>Formulario Do Cliente</b></legend>
                         <br>
@@ -44,7 +62,7 @@
                         </div>
                         <br>
                         <div class="input">
-                            <input type="date" id="data_nascimento" name="Data_Nascimento" value="" class="input_user" required>
+                            <input type="date" id="data_nascimento" name="data_nascimento" value="" class="input_user" required>
                             <label for="data_nascimento" class="label"><b>Data de Nascimento</b></label>
                         </div>
                         <br>
